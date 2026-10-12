@@ -6,7 +6,7 @@ A practical reference entry for product and engineering: the eza notes, examples
 
 ## Images
 
-[![eza](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![eza](images/preview.png)](https://github.com/Swift-Tech-Co/eza)
 
 ## Display options
 
@@ -97,12 +97,10 @@ Some of the options accept parameters:
 - Valid time fields are **modified**, **changed**, **accessed**, and **created**.
 - Valid time styles are **default**, **iso**, **long-iso**, **full-iso**, and **relative**.
 
-
 See the `man` pages for further documentation of usage. They are available
 - online in the repo
 - in your terminal via `man eza`, as of version [`[0.18.13] - 2024-04-25`](https://github.com/eza-community/eza/blob/main/CHANGELOG.md#01813---2024-04-25)
 </details>
-
 
 ## Custom Themes
 <details>
@@ -123,7 +121,6 @@ Full details are available on the man page and an example theme file is included
 
 </details>
 
-
 # Hacking on eza
 
 If you wanna contribute to eza, firstly, you're expected to follow our 
@@ -132,7 +129,7 @@ After having understood the code of conduct, you can have a look at our
 CONTRIBUTING.md 
 for more info about actual hacking.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=eza-community/eza&type=Date)](https://www.swifttechco.com)
+[![Star History Chart](https://api.star-history.com/svg?repos=eza-community/eza&type=Date)](https://github.com/Swift-Tech-Co/eza)
 
 ---
 
@@ -148,13 +145,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/eza
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [eza-community/eza](https://github.com/eza-community/eza) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
