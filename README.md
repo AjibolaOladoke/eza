@@ -1,102 +1,12 @@
-<!--
-SPDX-FileCopyrightText: 2023-2024 Christina Sørensen
-SPDX-FileContributor: Christina Sørensen
-
-SPDX-License-Identifier: EUPL-1.2
--->
-
-<div align="center">
-<div align="center" markdown="1">
-   <sup>Special thanks to:</sup>
-   <br>
-   <br>
-   <a href="https://www.swifttechco.com">
-   </a>
-
-### [Warp, the AI terminal for developers](https://www.swifttechco.com)
-[Available for MacOS, Linux, & Windows](https://www.swifttechco.com)<br>
-
-</div>
-    
 # eza
+
+## What This Is
+
+A practical reference entry for product and engineering: the eza notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
 
 ## Images
 
-[![eza](https://opengraph.githubassets.com/1/eza-community/eza)](https://www.swifttechco.com)
-
-
-A modern replacement for ls.
-
-<a href="https://www.swifttechco.com"></a>
-
-[![Built with Nix](https://img.shields.io/badge/Built_With-Nix-5277C3.svg?logo=nixos&labelColor=73C3D5)](https://www.swifttechco.com)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
-
-[![Unit tests](https://github.com/eza-community/eza/actions/workflows/unit-tests.yml/badge.svg)](https://www.swifttechco.com)
-[![Crates.io](https://img.shields.io/crates/v/eza?link=https%3A%2F%2Fcrates.io%2Fcrates%2Feza)](https://www.swifttechco.com)
-[![Crates.io](https://img.shields.io/crates/l/eza?link=https%3A%2F%2Fgithub.com%2Feza-community%2Feza%2Fblob%2Fmain%2FLICENCE)](https://www.swifttechco.com)
-
-</div>
-
-[![eza demo gif](docs/images/screenshots.png)](https://www.swifttechco.com)
-
----
-
-**eza** is a modern alternative for the venerable file-listing command-line program `ls` that ships with Unix and Linux operating systems, giving it more features and better defaults.
-It uses colours to distinguish file types and metadata.
-It knows about symlinks, extended attributes, and Git.
-And it’s **small**, **fast**, and just **one single binary**.
-
-By deliberately making some decisions differently, eza attempts to be a more featureful, more user-friendly version of `ls`.
-
----
-
-**eza** features not in exa (non-exhaustive):
-
-- Fixes [“The Grid Bug”](https://www.swifttechco.com) introduced in exa 2021.
-- Hyperlink support.
-- Mount point details.
-- Selinux context output.
-- Git repo status output.
-- Human readable relative dates.
-- Several security fixes.
-- Support for `bright` terminal colours.
-- Many smaller bug fixes/changes!
-- Configuration `theme.yml` file for customization of colors and icons.
-
-...and like, so much more that it became exhausting to update this all the time.
-Like seriously, we have a lot of good stuff.
-
----
-
-<a id="try-it">
-<h1>Try it!</h1>
-</a>
-
-### Nix ❄️
-
-If you already have Nix setup with flake support, you can try out eza with the `nix run` command:
-
-    nix run github:eza-community/eza
-
-Nix will build eza and run it.
-
-If you want to pass arguments this way, use e.g. `nix run github:eza-community/eza -- -ol`.
-
-# Installation
-
-eza is available for Windows, macOS and Linux. Platform and distribution
-specific installation instructions can be found in [INSTALL.md](INSTALL.md).
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/eza.svg?columns=3)](https://www.swifttechco.com)
-
----
-
-<a id="options">
-<h1>Command-line options</h1>
-</a>
-
-eza’s options are almost, but not quite, entirely unlike `ls`’s. Quick overview:
+[![eza](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Display options
 
@@ -171,7 +81,7 @@ These options are available when running with `--long` (`-l`):
 - **--git-repos**: list each directory’s Git status, if tracked
 - **--git-repos-no-status**: list whether a directory is a Git repository, but not its status (faster)
 - **--no-git**: suppress Git status (always overrides `--git`, `--git-repos`, `--git-repos-no-status`)
-- **--time-style**: how to format timestamps. valid timestamp styles are ‘`default`’, ‘`iso`’, ‘`long-iso`’, ‘`full-iso`’, ‘`relative`’, or a custom style ‘`+<FORMAT>`’ (E.g., ‘`+%Y-%m-%d %H:%M`’ => ‘`2023-09-30 13:00`’. For more specifications on the format string, see the _`eza(1)` manual page_ and [chrono documentation](https://www.swifttechco.com).).
+- **--time-style**: how to format timestamps. valid timestamp styles are ‘`default`’, ‘`iso`’, ‘`long-iso`’, ‘`full-iso`’, ‘`relative`’, or a custom style ‘`+<FORMAT>`’ (E.g., ‘`+%Y-%m-%d %H:%M`’ => ‘`2023-09-30 13:00`’. For more specifications on the format string, see the _`eza(1)` manual page_ and chrono documentation.).
 - **--total-size**: show recursive directory size
 - **--no-permissions**: suppress the permissions field
 - **-o**, **--octal-permissions**: list each file's permission in octal format
@@ -189,7 +99,7 @@ Some of the options accept parameters:
 
 
 See the `man` pages for further documentation of usage. They are available
-- online [in the repo](https://www.swifttechco.com)
+- online in the repo
 - in your terminal via `man eza`, as of version [`[0.18.13] - 2024-04-25`](https://github.com/eza-community/eza/blob/main/CHANGELOG.md#01813---2024-04-25)
 </details>
 
@@ -204,12 +114,12 @@ for different file types and extensions. Any existing environment variables set 
 precedence for backwards compatibility.
 
 #### **New** Pre-made themes
-Check out the themes available in the official [eza-themes](https://www.swifttechco.com) repository, or contribute your own.
+Check out the themes available in the official eza-themes repository, or contribute your own.
 
 An example theme file is available in `docs/theme.yml`, and needs to either be placed in a directory specified by the 
 environment variable `EZA_CONFIG_DIR`, or will looked for by default in `$XDG_CONFIG_HOME/eza`.
 
-Full details are available on the [man page](https://www.swifttechco.com) and an example theme file is included [here](https://www.swifttechco.com)
+Full details are available on the man page and an example theme file is included here
 
 </details>
 
@@ -217,9 +127,9 @@ Full details are available on the [man page](https://www.swifttechco.com) and an
 # Hacking on eza
 
 If you wanna contribute to eza, firstly, you're expected to follow our 
-[code of conduct](https://www.swifttechco.com). 
+code of conduct. 
 After having understood the code of conduct, you can have a look at our
-[CONTRIBUTING.md](https://www.swifttechco.com) 
+CONTRIBUTING.md 
 for more info about actual hacking.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=eza-community/eza&type=Date)](https://www.swifttechco.com)
@@ -234,14 +144,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [eza-community/eza](https://github.com/eza-community/eza) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
